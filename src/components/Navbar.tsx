@@ -1,10 +1,12 @@
-import {Box} from "@mui/material";
+import {AppBar, Toolbar} from "@mui/material";
 
 const Navbar = () => {
     return (
-        <Box sx={{background: 'red'}}>
-            Navbar
-        </Box>
+        <AppBar sx={{}}>
+            <Toolbar position="static">
+                Navbar
+            </Toolbar>
+        </AppBar>
     );
 };
 
