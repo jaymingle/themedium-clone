@@ -6,7 +6,6 @@ function App() {
 
   return (
     <Box>
-        The Test
         <Button variant="contained">The Ghana</Button>
     </Box>
   )
