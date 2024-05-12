@@ -1,6 +1,8 @@
 import {Box, Stack} from "@mui/material";
 import './App.css';
 import Navbar from "./components/Navbar.tsx";
+import Posts from "./components/Posts.tsx";
+import Rightbar from "./components/Rightbar.tsx";
 
 function App() {
 
@@ -8,7 +10,8 @@ function App() {
     <Box>
         <Navbar/>
         <Stack>
-
+            <Posts/>
+            <Rightbar/>
         </Stack>
     </Box>
   )
