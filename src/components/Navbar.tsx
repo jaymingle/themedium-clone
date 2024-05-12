@@ -3,7 +3,7 @@ import {Box} from "@mui/material";
 const Navbar = () => {
     return (
         <Box sx={{background: 'red'}}>
-            The Box
+            Navbar
         </Box>
     );
 };
