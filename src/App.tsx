@@ -9,7 +9,7 @@ function App() {
   return (
     <Box>
         <Navbar/>
-        <Stack sx={{width: '85%'}} spacing={25} direction="row">
+        <Stack sx={{}} spacing={10} direction="row">
             <Posts/>
             <Rightbar/>
         </Stack>
