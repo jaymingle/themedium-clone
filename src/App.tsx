@@ -9,7 +9,7 @@ function App() {
   return (
     <Box>
         <Navbar/>
-        <Stack sx={{marginX:{xs:0, sm: 5, md: 10}}} spacing={10} direction="row">
+        <Stack sx={{marginX:{xs:0, sm: 5, md: 10, lg: 30}}} spacing={10} direction="row">
             <Posts/>
             <Rightbar/>
         </Stack>
