@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import {Box, Button} from "@mui/material";
+import {Box, Button, Stack} from "@mui/material";
 import './App.css';
+import Navbar from "./components/Navbar.tsx";
 
 function App() {
 
   return (
     <Box>
-        <Button variant="contained">The Ghana</Button>
+        <Navbar/>
+        <Stack>
+
+        </Stack>
     </Box>
   )
 }

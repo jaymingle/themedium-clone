@@ -1,10 +1,11 @@
 import React from 'react';
+import {Box} from "@mui/material";
 
 const Navbar = () => {
     return (
-        <div>
-            
-        </div>
+        <Box sx={{background: 'red'}}>
+            The Box
+        </Box>
     );
 };
 
