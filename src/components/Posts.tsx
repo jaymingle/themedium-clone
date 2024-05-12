@@ -2,7 +2,7 @@ import {Box} from "@mui/material";
 
 const Posts = () => {
     return (
-        <Box flex={7} sx={{background: 'brown', marginLeft:{xs: 0, sm:5}}}>
+        <Box flex={7} sx={{background: 'brown'}}>
             The Post
         </Box>
     );
