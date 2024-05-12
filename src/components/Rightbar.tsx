@@ -2,7 +2,7 @@ import {Box} from "@mui/material";
 
 const Rightbar = () => {
     return (
-        <Box flex={3} sx={{background: 'green', display:{sx: 'none', sm: 'block'}}}>
+        <Box flex={2} sx={{background: 'green', display:{sx: 'none'}}}>
             The Rightbar
         </Box>
     );
