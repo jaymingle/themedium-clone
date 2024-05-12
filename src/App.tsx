@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import {Box, Button, Stack} from "@mui/material";
+import {Box, Stack} from "@mui/material";
 import './App.css';
 import Navbar from "./components/Navbar.tsx";
 
