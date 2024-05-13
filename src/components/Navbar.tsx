@@ -58,7 +58,7 @@ const Navbar = () => {
     return (
         <AppBar sx={{marginBottom: 1}} position="sticky">
             <StyledToolBar>
-                <StyledBox>
+                <StyledBox sx={{gap: '20px'}}>
                     <img width={40} src="https://cdn.icon-icons.com/icons2/2997/PNG/512/medium_logo_icon_187624.png"
                          alt="medium logo"/>
                     <Search sx={{display:{xs: 'none', sm:'block'}}}>
@@ -75,7 +75,7 @@ const Navbar = () => {
                                 <ListItemIcon>
                                     <EditNote sx={{ width: '40px', height: '40px'}}/>
                                 </ListItemIcon>
-                                <ListItemText  primary="Write" />
+                                <ListItemText  primary="Write" sx={{marginLeft: '-16px'}} />
                             </ListItemButton>
                         </ListItem>
                     </List>
