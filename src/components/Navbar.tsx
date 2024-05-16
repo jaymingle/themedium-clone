@@ -12,6 +12,7 @@ import {
     ListItemIcon, ListItemText, Badge, Avatar, Typography, Menu, MenuItem, Button
 } from "@mui/material";
 import {EditNote, Inbox, Notifications, Search as TheSearch} from '@mui/icons-material';
+import Post from "./elements/Post.tsx";
 
 
 const Navbar = () => {
@@ -81,7 +82,7 @@ const Navbar = () => {
 
                 <StyledBox sx={{alignItems: "center", gap: 1}}>
 
-
+                    <Post/>
 
                     <Badge badgeContent={4} color="primary" sx={{display: {xs: "none", sm: "none", md: "block"}}}>
                         <Notifications color="action" />

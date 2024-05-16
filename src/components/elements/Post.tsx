@@ -1,8 +1,12 @@
+import React from 'react';
 import {Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Tooltip} from "@mui/material";
 import {EditNote} from "@mui/icons-material";
 
 
 const Post = () => {
+
+    const [open, setOpen] = React.useState<boolean>(false)
+
     return (
         <Box>
             <Tooltip title="Write Post">
