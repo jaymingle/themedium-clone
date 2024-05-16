@@ -17,13 +17,6 @@ import {EditNote, Inbox, Notifications, Search as TheSearch} from '@mui/icons-ma
 const Navbar = () => {
 
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-    // const open = Boolean(anchorEl);
-    // const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    //     setAnchorEl(event.currentTarget);
-    // };
-    // const handleClose = () => {
-    //     setAnchorEl(null);
-    // };
 
     const [open, setOpen] = React.useState<boolean>(false)
 
@@ -87,16 +80,9 @@ const Navbar = () => {
                 </StyledBox>
 
                 <StyledBox sx={{alignItems: "center", gap: 1}}>
-                    <List sx={{width: '100%', maxWidth: '120px'}}>
-                        <ListItem disablePadding>
-                            <ListItemButton>
-                                <ListItemIcon>
-                                    <EditNote sx={{ width: '40px', height: '40px'}}/>
-                                </ListItemIcon>
-                                <ListItemText  primary="Write" sx={{marginLeft: '-16px'}} />
-                            </ListItemButton>
-                        </ListItem>
-                    </List>
+
+
+
                     <Badge badgeContent={4} color="primary" sx={{display: {xs: "none", sm: "none", md: "block"}}}>
                         <Notifications color="action" />
                     </Badge>
