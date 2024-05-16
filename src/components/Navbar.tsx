@@ -126,7 +126,7 @@ const Navbar = () => {
                             vertical: 'bottom',
                             horizontal: 'right',
                         }}
-                        sx={{paddingTop: '50px'}}
+                        sx={{marginTop: '50px'}}
                     >
                         <MenuItem>Profile</MenuItem>
                         <MenuItem>My account</MenuItem>
