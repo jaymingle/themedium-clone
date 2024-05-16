@@ -21,7 +21,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: {xs: '70%', sm: '50%', md: '50%'},
-    height: {xs: '35%', sm: '42%', md: '45%'},
+    height: {xs: '40%', sm: '42%', md: '45%'},
     borderRadius: 5,
     bgcolor: 'background.paper',
     border: '2px solid #000',
@@ -79,7 +79,7 @@ const Write = () => {
             >
                 <Box sx={style}>
                     <Typography sx={{textAlign: 'center'}} id="modal-modal-title" variant="h5" component="h2">
-                        Create Write
+                        Create Post
                     </Typography>
                     <UserBox>
                         <Avatar>J</Avatar>
