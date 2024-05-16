@@ -50,7 +50,7 @@ const PostButton = styled(Button)(({theme}) => ({
     backgroundColor: theme.palette.secondary.main,
 }))
 
-const Post = () => {
+const Write = () => {
 
     const [open, setOpen] = React.useState<boolean>(false)
     const handleOpen = () => setOpen(true);
@@ -58,7 +58,7 @@ const Post = () => {
 
     return (
         <Box>
-            <Tooltip title="Write Post" onClick={handleOpen}>
+            <Tooltip title="Write Write" onClick={handleOpen}>
                 <List sx={{width: '100%', maxWidth: '120px'}}>
                     <ListItem disablePadding>
                         <ListItemButton>
@@ -79,7 +79,7 @@ const Post = () => {
             >
                 <Box sx={style}>
                     <Typography sx={{textAlign: 'center'}} id="modal-modal-title" variant="h5" component="h2">
-                        Create Post
+                        Create Write
                     </Typography>
                     <UserBox>
                         <Avatar>J</Avatar>
@@ -107,7 +107,7 @@ const Post = () => {
                             </Tooltip>
                         </Stack>
                         <PostButton sx={{backgroundColor: '#fff'}} variant="contained" endIcon={<Description />}>
-                            Post
+                            Write
                         </PostButton>
                     </StyledBox>
                 </Box>
@@ -116,4 +116,4 @@ const Post = () => {
     );
 };
 
-export default Post;
+export default Write;

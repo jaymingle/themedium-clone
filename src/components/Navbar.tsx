@@ -12,7 +12,7 @@ import {
     ListItemIcon, ListItemText, Badge, Avatar, Typography, Menu, MenuItem, Button
 } from "@mui/material";
 import {EditNote, Inbox, Notifications, Search as TheSearch} from '@mui/icons-material';
-import Post from "./elements/Post.tsx";
+import Write from "./elements/Write.tsx";
 
 
 const Navbar = () => {
@@ -72,24 +72,24 @@ const Navbar = () => {
                 <StyledBox sx={{gap: '20px'}}>
                     <img width={40} src="https://cdn.icon-icons.com/icons2/2997/PNG/512/medium_logo_icon_187624.png"
                          alt="medium logo"/>
-                    <Search sx={{display:{xs: 'none', sm:'block'}}}>
+                    <Search sx={{display: {xs: 'none', sm: 'block'}}}>
                         <SearchIconWrapper>
                             <TheSearch/>
                         </SearchIconWrapper>
-                        <StyledInputBase placeholder="search..." inputProps={{ 'aria-label': 'search' }}/>
+                        <StyledInputBase placeholder="search..." inputProps={{'aria-label': 'search'}}/>
                     </Search>
                 </StyledBox>
 
                 <StyledBox sx={{alignItems: "center", gap: 1}}>
 
-                    <Post/>
+                    <Write/>
 
                     <Badge badgeContent={4} color="primary" sx={{display: {xs: "none", sm: "none", md: "block"}}}>
-                        <Notifications color="action" />
+                        <Notifications color="action"/>
                     </Badge>
                     <Button onClick={handleClick}>
                         <Avatar
-                            sx={{ }}
+                            sx={{}}
                             alt="User Name Letter"
                             src="/broken-image.jpg"
                         >
@@ -101,7 +101,7 @@ const Navbar = () => {
                         id="demo-positioned-menu"
                         anchorEl={anchorEl}
                         open={open}
-                        onClose={ e => setOpen(false)}
+                        onClose={e => setOpen(false)}
                         MenuListProps={{
                             'aria-labelledby': 'basic-button',
                         }}
