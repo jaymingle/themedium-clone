@@ -3,7 +3,9 @@ import {Box, styled, Typography} from "@mui/material";
 const RandomNotice = () => {
 
     const StyledBox = styled(Box)({
-        marginTop: 5,
+        margin: 0,
+        padding: 0,
+        backgroundColor: '#000'
     })
 
     return (

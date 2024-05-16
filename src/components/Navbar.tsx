@@ -67,7 +67,7 @@ const Navbar = () => {
 
 
     return (
-        <AppBar sx={{marginBottom: 1}} position="sticky">
+        <AppBar position="sticky">
             <StyledToolBar>
                 <StyledBox sx={{gap: '20px'}}>
                     <img width={40} src="https://cdn.icon-icons.com/icons2/2997/PNG/512/medium_logo_icon_187624.png"
