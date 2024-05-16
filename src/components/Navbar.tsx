@@ -115,9 +115,9 @@ const Navbar = () => {
                         anchorEl={anchorEl}
                         open={open}
                         onClose={ e => setOpen(false)}
-                        // MenuListProps={{
-                        //     'aria-labelledby': 'basic-button',
-                        // }}
+                        MenuListProps={{
+                            'aria-labelledby': 'basic-button',
+                        }}
                         anchorOrigin={{
                             vertical: 'bottom',
                             horizontal: 'right',
@@ -126,6 +126,7 @@ const Navbar = () => {
                             vertical: 'bottom',
                             horizontal: 'right',
                         }}
+                        sx={{paddingTop: '50px'}}
                     >
                         <MenuItem>Profile</MenuItem>
                         <MenuItem>My account</MenuItem>
