@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import {
     AppBar,
     Box,
@@ -8,12 +9,27 @@ import {
     List,
     ListItem,
     ListItemButton,
-    ListItemIcon, ListItemText
+    ListItemIcon, ListItemText, Badge, Avatar, Typography, Menu, MenuItem, Button
 } from "@mui/material";
-import {EditNote, Inbox, Search as TheSearch} from '@mui/icons-material';
+import {EditNote, Inbox, Notifications, Search as TheSearch} from '@mui/icons-material';
+
+
 const Navbar = () => {
 
-    // const theme = useTheme()
+    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+    // const open = Boolean(anchorEl);
+    // const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    //     setAnchorEl(event.currentTarget);
+    // };
+    // const handleClose = () => {
+    //     setAnchorEl(null);
+    // };
+
+    const [open, setOpen] = React.useState<boolean>(false)
+
+    const handleClick = () => {
+        setOpen(open => !open)
+    }
 
     const StyledToolBar = styled(Toolbar)({
         display: 'flex',
@@ -55,6 +71,7 @@ const Navbar = () => {
         }
     }))
 
+
     return (
         <AppBar sx={{marginBottom: 1}} position="sticky">
             <StyledToolBar>
@@ -68,7 +85,8 @@ const Navbar = () => {
                         <StyledInputBase placeholder="search..." inputProps={{ 'aria-label': 'search' }}/>
                     </Search>
                 </StyledBox>
-                <StyledBox>
+
+                <StyledBox sx={{alignItems: "center", gap: 1}}>
                     <List sx={{width: '100%', maxWidth: '120px'}}>
                         <ListItem disablePadding>
                             <ListItemButton>
@@ -79,6 +97,40 @@ const Navbar = () => {
                             </ListItemButton>
                         </ListItem>
                     </List>
+                    <Badge badgeContent={4} color="primary" sx={{display: {xs: "none", sm: "none", md: "block"}}}>
+                        <Notifications color="action" />
+                    </Badge>
+                    <Button onClick={handleClick}>
+                        <Avatar
+                            sx={{ }}
+                            alt="User Name Letter"
+                            src="/broken-image.jpg"
+                        >
+                            B
+                        </Avatar>
+                    </Button>
+
+                    <Menu
+                        id="demo-positioned-menu"
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={ e => setOpen(false)}
+                        // MenuListProps={{
+                        //     'aria-labelledby': 'basic-button',
+                        // }}
+                        anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'right',
+                        }}
+                        transformOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'right',
+                        }}
+                    >
+                        <MenuItem>Profile</MenuItem>
+                        <MenuItem>My account</MenuItem>
+                        <MenuItem>Logout</MenuItem>
+                    </Menu>
                 </StyledBox>
             </StyledToolBar>
         </AppBar>
