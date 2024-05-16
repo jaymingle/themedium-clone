@@ -12,6 +12,7 @@ import {
     Typography
 } from "@mui/material";
 import {Description, EditNote, Image, VideoCameraBack} from "@mui/icons-material";
+import {purple} from "@mui/material/colors";
 
 
 const style = {
@@ -42,7 +43,12 @@ const StyledBox = styled(Box)({
     justifyContent: 'space-between',
 })
 
-
+const PostButton = styled(Button)(({theme}) => ({
+    height: 50,
+    width: 150,
+    marginTop: 20,
+    backgroundColor: theme.palette.secondary.main,
+}))
 
 const Post = () => {
 
@@ -100,9 +106,9 @@ const Post = () => {
                                 </IconButton>
                             </Tooltip>
                         </Stack>
-                        <Button sx={{height: 50, width: 150, marginTop: 2, backgroundColor: '#fff'}} variant="contained" endIcon={<Description />}>
+                        <PostButton sx={{backgroundColor: '#fff'}} variant="contained" endIcon={<Description />}>
                             Post
-                        </Button>
+                        </PostButton>
                     </StyledBox>
                 </Box>
             </Modal>
