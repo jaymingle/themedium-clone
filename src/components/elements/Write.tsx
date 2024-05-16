@@ -12,7 +12,6 @@ import {
     Typography
 } from "@mui/material";
 import {Description, EditNote, Image, VideoCameraBack} from "@mui/icons-material";
-import {purple} from "@mui/material/colors";
 
 
 const style = {
@@ -21,7 +20,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: {xs: '70%', sm: '50%', md: '50%'},
-    height: {xs: '40%', sm: '42%', md: '45%'},
+    height: {xs: '50%', sm: '50%', md: '50%'},
     borderRadius: 5,
     bgcolor: 'background.paper',
     border: '2px solid #000',
@@ -85,6 +84,9 @@ const Write = () => {
                         <Avatar>J</Avatar>
                         <Typography id="modal-modal-description">Jay Mingle </Typography>
                     </UserBox>
+
+                    <TextField sx={{width: '80%'}} placeholder="Post Title?" id="outlined-basic" label="Post Title" variant="outlined" />
+
                     <TextField
                         id="standard-multiline-static"
                         multiline
