@@ -37,9 +37,9 @@ const Navbar = () => {
     const Search = styled('div')((theme) => ({
         position: 'relative',
         borderRadius: '25px',
-        backgroundColor: alpha('#e57373', 0.15),
+        backgroundColor: alpha('#9e9e9e', 0.15),
         '&:hover':{
-            backgroundColor: alpha('#ce93d8', 0.25)
+            backgroundColor: alpha('#bdbdbd', 0.25)
         },
         marginLeft: 0,
         marginRight: 5,

@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     Avatar,
-    Box,
+    Box, Button, IconButton,
     List,
     ListItem,
     ListItemButton,
@@ -11,7 +11,7 @@ import {
     Tooltip,
     Typography
 } from "@mui/material";
-import {EditNote} from "@mui/icons-material";
+import {Description, EditNote, Image, VideoCameraBack} from "@mui/icons-material";
 
 
 const style = {
@@ -20,7 +20,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: {xs: '70%', sm: '50%', md: '50%'},
-    height: {xs: '40%', sm: '50%', md: '60%'},
+    height: {xs: '35%', sm: '42%', md: '45%'},
     borderRadius: 5,
     bgcolor: 'background.paper',
     border: '2px solid #000',
@@ -36,6 +36,13 @@ const UserBox = styled(Box)({
     marginBottom: "20px",
     marginTop: "30px"
 })
+
+const StyledBox = styled(Box)({
+    display: 'flex',
+    justifyContent: 'space-between',
+})
+
+
 
 const Post = () => {
 
@@ -80,9 +87,23 @@ const Post = () => {
                         placeholder="What do you have in mind?"
                         variant="standard"
                     />
-                    <Stack direction="row" spacing={5}>
-
-                    </Stack>
+                    <StyledBox>
+                        <Stack direction="row" sx={{marginTop: 4}}>
+                            <Tooltip title="Add Image">
+                                <IconButton aria-label="Image" color="success">
+                                    <Image />
+                                </IconButton>
+                            </Tooltip>
+                            <Tooltip title="Add Video">
+                                <IconButton aria-label="Video">
+                                    <VideoCameraBack aria-label="Video" color="warning" />
+                                </IconButton>
+                            </Tooltip>
+                        </Stack>
+                        <Button sx={{height: 50, width: 150, marginTop: 2, backgroundColor: '#fff'}} variant="contained" endIcon={<Description />}>
+                            Post
+                        </Button>
+                    </StyledBox>
                 </Box>
             </Modal>
         </Box>
