@@ -5,16 +5,16 @@ const Post = () => {
 
     const imageStyles = {
         height: {
-            xs: '50px',
-            sm: '120px',
-            md: '180px',
-            lg: '200px',
+            xs: '30px',
+            sm: '100px',
+            md: '120px',
+            lg: '150px',
         },
         width: {
-            xs: '50px',
-            sm: '140px',
-            md: '200px',
-            lg: '250px',
+            xs: '30px',
+            sm: '100px',
+            md: '120px',
+            lg: '150px',
         },
     };
 
