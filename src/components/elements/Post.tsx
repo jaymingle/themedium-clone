@@ -50,9 +50,8 @@ const Post = () => {
                     </Stack>
                 </Box>
             </Box>
-            <Box>
-                <img sx={imageStyles} src="https://mui.com/static/images/cards/paella.jpg" alt="Image"/>
-                {/*width={250} height={200}*/}
+            <Box sx={imageStyles}>
+                <img src="https://mui.com/static/images/cards/paella.jpg" alt="Image"/>
             </Box>
         </StyledCard>
     );
