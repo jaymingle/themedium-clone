@@ -12,6 +12,10 @@ const Categories = () => {
         setValue(newValue);
     }
 
+    const tabClickHandler = () => {
+        console.log('Item 1 Clicked')
+    }
+
     const ScrollableBox = styled(Box)({
         [`& .${tabsClasses.scrollButtons}`]: {
             '&.Mui-disabled': { opacity: 0.3 },
@@ -19,11 +23,21 @@ const Categories = () => {
         // backgroundColor: 'grey',
     })
 
+    const StyledTab = styled(Tab)({
+        textTransform: 'initial',
+        color: '#000',
+        '&:hover': {
+            color: 'grey'
+        },
+        '&.Mui-selected':{
+            color: 'grey'
+        }
+    })
+
     return (
         <Stack sx={{marginY: 2}}>
             <ScrollableBox sx={{maxWidth: { xs: 370, sm: 480, md: 720, lg: 920},}}>
                 <Tabs
-                    // sx={{color: 'red'}}
                     value={value}
                     onChange={handleChange}
                     variant="scrollable"
@@ -31,25 +45,25 @@ const Categories = () => {
                     allowScrollButtonsMobile
                     aria-label="scrollable categories tab"
                 >
-                    <Tab label="Item One" />
-                    <Tab label="Item Two" />
-                    <Tab label="Item Three" />
-                    <Tab label="Item Four" />
-                    <Tab label="Item Five" />
-                    <Tab label="Item Six" />
-                    <Tab label="Item Seven" />
-                    <Tab label="Item Four" />
-                    <Tab label="Item Five" />
-                    <Tab label="Item Six" />
-                    <Tab label="Item Seven" />
-                    <Tab label="Item Four" />
-                    <Tab label="Item Five" />
-                    <Tab label="Item Six" />
-                    <Tab label="Item Seven" />
-                    <Tab label="Item Four" />
-                    <Tab label="Item Five" />
-                    <Tab label="Item Six" />
-                    <Tab label="Item Seven" />
+                    <StyledTab onClick={tabClickHandler} label="Item One" />
+                    <StyledTab label="Item Two" />
+                    <StyledTab label="Item Three" />
+                    <StyledTab label="Item Four" />
+                    <StyledTab label="Item Five" />
+                    <StyledTab label="Item Six" />
+                    <StyledTab label="Item Seven" />
+                    <StyledTab label="Item Four" />
+                    <StyledTab label="Item Five" />
+                    <StyledTab label="Item Six" />
+                    <StyledTab label="Item Seven" />
+                    <StyledTab label="Item Four" />
+                    <StyledTab label="Item Five" />
+                    <StyledTab label="Item Six" />
+                    <StyledTab label="Item Seven" />
+                    <StyledTab label="Item Four" />
+                    <StyledTab label="Item Five" />
+                    <StyledTab label="Item Six" />
+                    <StyledTab label="Item Seven" />
                 </Tabs>
             </ScrollableBox>
             <hr/>
