@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Box, Stack, Tab, Tabs} from "@mui/material";
+import {Box, Stack, styled, Tab, Tabs} from "@mui/material";
 
 const Categories = () => {
 
@@ -9,12 +9,15 @@ const Categories = () => {
         setValue(newValue);
     }
 
+    const ScrollableBox = styled(Box)({
+        maxWidth: { xs: 370, sm: 480, md: 720, lg: 920},
+    })
 
-
+    // sx={{ maxWidth: { xs: 370, sm: 480, md: 720, lg: 920}, bgcolor: 'background.paper' }}
 
     return (
         <Stack sx={{marginY: 2}}>
-            <Box sx={{ maxWidth: { xs: 370, sm: 480, md: 720, lg: 920}, bgcolor: 'background.paper' }}>
+            <ScrollableBox>
                 <Tabs
                     value={value}
                     onChange={handleChange}
@@ -43,7 +46,7 @@ const Categories = () => {
                     <Tab label="Item Six" />
                     <Tab label="Item Seven" />
                 </Tabs>
-            </Box>
+            </ScrollableBox>
             <hr/>
         </Stack>
     );
