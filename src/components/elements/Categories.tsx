@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 import {Box, Stack, styled, Tab, Tabs} from "@mui/material";
+import { tabsClasses } from '@mui/material/Tabs';
+import {grey} from "@mui/material/colors";
+
 
 const Categories = () => {
 
@@ -10,21 +13,22 @@ const Categories = () => {
     }
 
     const ScrollableBox = styled(Box)({
-        maxWidth: { xs: 370, sm: 480, md: 720, lg: 920},
+        [`& .${tabsClasses.scrollButtons}`]: {
+            '&.Mui-disabled': { opacity: 0.3 },
+        },
+        bgColor: grey,
     })
-
-    // sx={{ maxWidth: { xs: 370, sm: 480, md: 720, lg: 920}, bgcolor: 'background.paper' }}
 
     return (
         <Stack sx={{marginY: 2}}>
-            <ScrollableBox>
+            <ScrollableBox sx={{maxWidth: { xs: 370, sm: 480, md: 720, lg: 920},}}>
                 <Tabs
                     value={value}
                     onChange={handleChange}
                     variant="scrollable"
                     scrollButtons
                     allowScrollButtonsMobile
-                    aria-label="scrollable force tabs example"
+                    aria-label="scrollable categories tab"
                 >
                     <Tab label="Item One" />
                     <Tab label="Item Two" />
