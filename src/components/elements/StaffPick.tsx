@@ -6,8 +6,11 @@ const StaffPick = () => {
         <Box>
             <Box>
                 <img src="" alt="User Image"/>
-                <Typography></Typography>
+                <Typography>UserName</Typography>
+                <Typography>in</Typography>
+                <Typography>Title</Typography>
             </Box>
+            <Typography>The full title of the article here</Typography>
         </Box>
     );
 };
