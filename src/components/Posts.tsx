@@ -6,7 +6,7 @@ const Posts = () => {
 
     const theme = useTheme()
     return (
-        <Box flex={5} px={{xs: 2, sm: 3, md: 5}} py={{xs: 2, sm: 3, lg: 4}} sx={{}}>
+        <Box flex={4} px={{xs: 2, sm: 3, md: 5}} py={{xs: 2, sm: 3, lg: 4}}>
             <Categories/>
             <Post/>
         </Box>
