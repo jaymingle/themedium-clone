@@ -16,13 +16,14 @@ const Categories = () => {
         [`& .${tabsClasses.scrollButtons}`]: {
             '&.Mui-disabled': { opacity: 0.3 },
         },
-        bgColor: grey,
+        // backgroundColor: 'grey',
     })
 
     return (
         <Stack sx={{marginY: 2}}>
             <ScrollableBox sx={{maxWidth: { xs: 370, sm: 480, md: 720, lg: 920},}}>
                 <Tabs
+                    // sx={{color: 'red'}}
                     value={value}
                     onChange={handleChange}
                     variant="scrollable"
