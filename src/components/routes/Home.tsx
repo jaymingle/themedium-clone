@@ -1,22 +1,38 @@
 import React from 'react';
-import {Box, Button, Typography} from "@mui/material";
+import {Box, Button, styled, Typography} from "@mui/material";
 import LogedOutNavbar from "../LogedOutNavbar.tsx";
 
 const Home = () => {
+
+    const FlexBoxed = styled(Box)({
+        display: 'flex',
+        marginLeft: '250px',
+        marginTop: 10
+    })
+
+    const LeftBox = styled(Box)({
+        marginTop: '150px',
+        paddingBottom: '350px'
+    })
+
+    const RightBox = styled(Box)({
+        marginLeft: '140px'
+    })
+
     return (
         <Box sx={{backgroundColor: '#FEC016'}}>
             <LogedOutNavbar/>
             <Box sx={{height: '2px', width: '100%', backgroundColor:'#000'}}></Box>
-            <Box sx={{display: 'flex', marginLeft: {}}}>
-                <Box>
+            <FlexBoxed>
+                <LeftBox>
                     <Typography variant="h1" sx={{color: '#000', fontWeight: 500}}>Stay Curious.</Typography>
                     <Typography variant="subtitle1" sx={{color: '#000', fontSize: '26px'}}>Discover stories, thinking, and expertise from writers on any topic.</Typography>
                     <Button sx={{color: '#fff', backgroundColor: '#000', borderRadius: '25px', marginTop: 10}} variant="contained">Start Reading</Button>
-                </Box>
-                <Box sx={{display:{xs: 'none', sm:'none', md: 'none', lg: 'block'}}}>
-                    <img height={800} width={950} src="../../../public/assets/mm_image.png" alt="MMMM Image"/>
-                </Box>
-            </Box>
+                </LeftBox>
+                <RightBox sx={{display:{xs: 'none', sm:'none', md: 'none', lg: 'block'}}}>
+                    <img height={600} width={550} src="../../../public/assets/mm_image.png" alt="MMMM Image"/>
+                </RightBox>
+            </FlexBoxed>
         </Box>
     );
 };
