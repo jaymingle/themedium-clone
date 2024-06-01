@@ -12,7 +12,7 @@ const Rightbar = () => {
                 <StaffPick/>
                 <StaffPick/>
                 <More text="See the full list"/>
-                <Typography variant="h6" sx={{marginY: "10px", fontSize: "18px"}}>Recommended Topics</Typography>
+                <Typography variant="h6" sx={{marginTop: 3, fontSize: "18px", paddingY: 2}}>Recommended Topics</Typography>
                 <Tags/>
                 <More text="See more topics"/>
             </Box>
