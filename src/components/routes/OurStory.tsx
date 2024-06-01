@@ -6,7 +6,7 @@ const OurStory = () => {
     return (
         <div>
             <StoryNavbar/>
-            StoryPage
+                StoryPage
             <StoryFooter/>
         </div>
     );
