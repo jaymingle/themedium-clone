@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 
 interface Prop {
     heading: string
@@ -7,9 +7,9 @@ interface Prop {
 
 const SideHeading: React.FC<Prop> = ({heading}) => {
     return (
-        <div>
-            <Typography variant="h6" sx={{marginY: "10px", fontSize: "18px"}}>Staff Picks</Typography>
-        </div>
+        <Box>
+            <Typography variant="h6" sx={{marginTop: 5, paddingY: 2, fontSize: "18px"}}>{heading}</Typography>
+        </Box>
     );
 };
 
