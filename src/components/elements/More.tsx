@@ -8,7 +8,7 @@ type Props ={
 const More: React.FC<Props> = ({text}) => {
     return (
         <Box>
-            <Link sx={{color: 'green', '&:hover':{color: '#000'},marginY: '200px', }} underline="none">{text}</Link>
+            <Link sx={{color: 'green', '&:hover':{color: '#000'}, marginY: 4, }} underline="none">{text}</Link>
         </Box>
     );
 };

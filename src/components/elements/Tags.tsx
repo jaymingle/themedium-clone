@@ -4,7 +4,7 @@ import {Box, Button} from "@mui/material";
 const Tags = () => {
 
     return (
-        <Box sx={{}}>
+        <Box sx={{marginBottom: 5}}>
             <Button sx={{borderRadius: '25px', margin: '5px 10px'}} variant="contained">Contained</Button>
             <Button sx={{borderRadius: '25px', margin: '5px 10px'}} variant="contained">Marca</Button>
             <Button sx={{borderRadius: '25px', margin: '5px 10px'}} variant="contained">Can</Button>
