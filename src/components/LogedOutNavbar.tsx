@@ -9,7 +9,7 @@ const LogedOutNavbar = () => {
                 justifyContent: 'space-around',
                 alignItems: 'center',
                 gap: 20,
-                backgroundColor: '#FEC016',
+                backgroundColor: '#fff',
                 height: '70px',
                 paddingX: 1
             }}>
