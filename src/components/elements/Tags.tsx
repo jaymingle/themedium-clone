@@ -1,21 +1,19 @@
 import React from 'react';
-import {Box, styled} from "@mui/material";
+import {Box, Button} from "@mui/material";
 
 const Tags = () => {
 
-    const StyledBox = styled(Box)({
-        backgroundColor: 'grey',
-        color: 'black',
-        borderRadius: '25px',
-        paddingX: 2,
-        paddingY: 4
-    })
-
     return (
-        <Box>
-            Tags
+        <Box sx={{}}>
+            <Button sx={{borderRadius: '25px', margin: '5px 10px'}} variant="contained">Contained</Button>
+            <Button sx={{borderRadius: '25px', margin: '5px 10px'}} variant="contained">Marca</Button>
+            <Button sx={{borderRadius: '25px', margin: '5px 10px'}} variant="contained">Can</Button>
+            <Button sx={{borderRadius: '25px', margin: '5px 10px'}} variant="contained">Hello</Button>
+            <Button sx={{borderRadius: '25px', margin: '5px 10px'}} variant="contained">Sofa</Button>
         </Box>
-    );
+
+
+);
 };
 
 export default Tags;

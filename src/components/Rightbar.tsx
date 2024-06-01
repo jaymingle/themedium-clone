@@ -6,10 +6,11 @@ const Rightbar = () => {
     return (
         <Box flex={3} sx={{display:{xs:"none", sm:"block"}, }} bgcolor="green">
             <Box sx={{marginTop: '60px', marginLeft: 2}}>
-                <Typography variant="h5">Staff Picks</Typography>
+                <Typography variant="h6" sx={{marginY: "10px", fontSize: "18px"}}>Staff Picks</Typography>
                 <StaffPick/>
                 <StaffPick/>
                 <StaffPick/>
+                <Typography variant="h6" sx={{marginY: "10px", fontSize: "18px"}}>Recommended Topics</Typography>
                 <Tags/>
             </Box>
         </Box>
