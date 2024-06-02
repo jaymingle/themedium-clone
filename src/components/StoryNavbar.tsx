@@ -14,16 +14,13 @@ const StoryNavbar = () => {
                 paddingX: 3,
                 paddingY: 1
             }}>
-                <img width={150} height={30}
+                <img width={100} height={30}
                      src="https://miro.medium.com/v2/resize:fit:8976/1*Ra88BZ-CSTovFS2ZSURBgg.png" alt="Medium Logo"/>
                 <Box sx={{display: 'flex', gap: 2}}>
-                    <Box sx={{display:{xs: 'none', sm: 'none', md: 'block'}}}>
-                        <Button sx={{color: '#000', textTransform: 'initial'}}>Our Story</Button>
-                        <Button sx={{color: '#000', textTransform: 'initial'}}>Membership</Button>
-                        <Button sx={{color: '#000', textTransform: 'initial'}}>Write</Button>
+                    <Box sx={{display: 'flex', gap: 2}}>
+                        <Button variant="contained" sx={{color: '#fff', backgroundColor: '#000', textTransform: 'initial', border: '1px solid #fff', borderRadius: '25px', fontSize: '12px'}}>Sign In</Button>
+                        <Button variant="contained" sx={{color: '#000', backgroundColor: '#fff', textTransform: 'initial', borderRadius: '25px', fontSize: '12px'}}>Sign up</Button>
                     </Box>
-                    <Button sx={{color: '#000', textTransform: 'initial', display:{xs: 'none', sm:'block'}}}>Sign In</Button>
-                    <Button variant="contained" sx={{backgroundColor: '#000', color: '#fff', borderRadius: '25px', fontSize:{ xs: '8px'} }}>Get Started</Button>
                 </Box>
             </Box>
         </Box>
@@ -31,3 +28,5 @@ const StoryNavbar = () => {
 };
 
 export default StoryNavbar;
+
+//
