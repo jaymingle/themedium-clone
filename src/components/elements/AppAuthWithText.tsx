@@ -55,7 +55,7 @@ const AppAuthWithText = ({theText}) => {
             {/*The Text on display*/}
             <Tooltip title={theText} onClick={handleOpen}>
                 {/*<Button variant="contained" sx={{color: '#fff', backgroundColor: '#000', textTransform: 'initial', border: '1px solid #fff', borderRadius: '25px', fontSize: '12px'}}>{theText}</Button>*/}
-                <Typography>{theText}</Typography>
+                <Typography sx={{fontSize: '14px', marginTop: 1}}>{theText}</Typography>
            </Tooltip>
 
             <Modal
