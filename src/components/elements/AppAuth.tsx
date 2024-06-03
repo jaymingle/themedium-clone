@@ -53,7 +53,7 @@ const AppAuth = ({theText}) => {
     return (
         <Box>
             {/*The Text on display*/}
-            <Tooltip title="Write" onClick={handleOpen}>
+            <Tooltip title={theText} onClick={handleOpen}>
                 <Button variant="contained" sx={{color: '#fff', backgroundColor: '#000', textTransform: 'initial', border: '1px solid #fff', borderRadius: '25px', fontSize: '12px'}}>{theText}</Button>
             </Tooltip>
 
