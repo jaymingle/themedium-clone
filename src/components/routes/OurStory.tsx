@@ -1,4 +1,3 @@
-import React from 'react';
 import StoryNavbar from "../StoryNavbar.tsx";
 import StoryFooter from "../StoryFooter.tsx";
 import {Box, Link, Typography} from "@mui/material";
