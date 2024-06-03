@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {Box, Stack, styled, Tab, Tabs} from "@mui/material";
 import { tabsClasses } from '@mui/material/Tabs';
-import {grey} from "@mui/material/colors";
 
 
 const Categories = () => {
