@@ -6,6 +6,7 @@ import {
     Tooltip,
     Typography
 } from "@mui/material";
+
 import {Description, Image, VideoCameraBack} from "@mui/icons-material";
 
 
@@ -44,7 +45,12 @@ const PostButton = styled(Button)(({theme}) => ({
     backgroundColor: theme.palette.secondary.main,
 }))
 
-const AppAuth = ({theText}) => {
+type Props = {
+    theText: string
+}
+
+
+const AppAuth:React.FC<Props> = ({theText}) => {
 
     const [open, setOpen] = React.useState<boolean>(false)
     const handleOpen = () => setOpen(true);

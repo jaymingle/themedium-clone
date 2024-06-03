@@ -44,7 +44,11 @@ const PostButton = styled(Button)(({theme}) => ({
     backgroundColor: theme.palette.secondary.main,
 }))
 
-const AppAuthWithText = ({theText}) => {
+interface Props {
+    theText: string
+}
+
+const AppAuthWithText:React.FC<Props> = ({theText}) => {
 
     const [open, setOpen] = React.useState<boolean>(false)
     const handleOpen = () => setOpen(true);
