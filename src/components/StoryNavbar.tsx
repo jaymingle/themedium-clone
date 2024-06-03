@@ -28,5 +28,3 @@ const StoryNavbar = () => {
 };
 
 export default StoryNavbar;
-
-//
