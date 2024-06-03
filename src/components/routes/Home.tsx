@@ -1,4 +1,3 @@
-import React from 'react';
 import {Box, Button, styled, Typography} from "@mui/material";
 import LogedOutNavbar from "../LogedOutNavbar.tsx";
 import LoggedOutFooter from "../LoggedOutFooter.tsx";
