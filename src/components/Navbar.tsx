@@ -6,12 +6,9 @@ import {
     Toolbar,
     InputBase,
     alpha,
-    List,
-    ListItem,
-    ListItemButton,
-    ListItemIcon, ListItemText, Badge, Avatar, Typography, Menu, MenuItem, Button
+    Badge, Avatar,  Menu, MenuItem, Button
 } from "@mui/material";
-import {EditNote, Inbox, Notifications, Search as TheSearch} from '@mui/icons-material';
+import {Notifications, Search as TheSearch} from '@mui/icons-material';
 import Write from "./elements/Write.tsx";
 
 
@@ -34,7 +31,7 @@ const Navbar = () => {
         display: 'flex',
     })
 
-    const Search = styled('div')((theme) => ({
+    const Search = styled('div')(() => ({
         position: 'relative',
         borderRadius: '25px',
         backgroundColor: alpha('#9e9e9e', 0.15),
@@ -47,7 +44,7 @@ const Navbar = () => {
         padding: '2px 30px 2px 10px',
     }))
 
-    const SearchIconWrapper = styled('div')((theme) => ({
+    const SearchIconWrapper = styled('div')(() => ({
         padding: '0 5',
         height: '100%',
         position: 'absolute',
@@ -56,7 +53,7 @@ const Navbar = () => {
         alignItems: 'center'
     }))
 
-    const StyledInputBase = styled(InputBase)((theme) => ({
+    const StyledInputBase = styled(InputBase)(() => ({
         color: 'inherit',
         '& .MuiInputBase-input':{
             padding: '1 1 1 0',
