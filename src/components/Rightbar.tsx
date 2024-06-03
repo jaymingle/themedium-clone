@@ -1,24 +1,19 @@
-import {Box, Typography} from "@mui/material";
-import StaffPick from "./elements/StaffPick.tsx";
-import Tags from "./elements/Tags.tsx";
-import More from "./elements/More.tsx";
-import SideHeading from "./elements/SideHeading.tsx";
-import {BookmarkAdd} from "@mui/icons-material";
+import {Avatar, Box, Link, Typography} from "@mui/material";
+
 
 const Rightbar = () => {
     return (
         <Box flex={3} sx={{display:{xs:"none", sm:"block"}, }}>
             <Box sx={{marginTop: '60px', marginLeft: 2}}>
-                <SideHeading heading="Staff Picks"/>
-                <StaffPick/>
-                <StaffPick/>
-                <StaffPick/>
-                <More text="See the full list"/>
-                <SideHeading heading="Recommended Topics"/>
-                <Tags/>
-                <More text="See more topics"/>
-                <SideHeading heading="Reading List"/>
-                <Typography sx={{paddingBottom: 1}}>Click the <BookmarkAdd/> on any story to easily add it to your reading list or a custom list that you can share.</Typography>
+                <Avatar
+                    sx={{ bgcolor: 'darkblue' }}
+                    alt="Jay Mingle"
+                    src=""
+                >
+                    J
+                </Avatar>
+                <Typography sx={{marginY: 2}}>Jay Mingle</Typography>
+                <Link sx={{color: 'green', fontSize: '14px'}}>Edit Profile</Link>
             </Box>
         </Box>
     );

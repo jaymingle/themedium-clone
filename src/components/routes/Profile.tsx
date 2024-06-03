@@ -1,5 +1,5 @@
 import Navbar from "../Navbar.tsx";
-import {Box, Stack, Typography} from "@mui/material";
+import {Box, Stack} from "@mui/material";
 import Posts from "../Posts.tsx";
 import Rightbar from "../Rightbar.tsx";
 

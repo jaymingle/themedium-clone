@@ -103,7 +103,7 @@ const Navbar = () => {
                             'aria-labelledby': 'basic-button',
                         }}
                         anchorOrigin={{
-                            vertical: 'bottom',
+                            vertical: 'top',
                             horizontal: 'right',
                         }}
                         transformOrigin={{
