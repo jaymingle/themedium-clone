@@ -1,4 +1,5 @@
 import {Box, Button} from "@mui/material";
+import AppAuth from "./elements/AppAuth.tsx";
 
 const LogedOutNavbar = () => {
     return (
@@ -21,7 +22,8 @@ const LogedOutNavbar = () => {
                         <Button sx={{color: '#000', textTransform: 'initial'}}>Write</Button>
                     </Box>
                     <Button sx={{color: '#000', textTransform: 'initial', display:{xs: 'none', sm:'block'}}}>Sign In</Button>
-                    <Button variant="contained" sx={{backgroundColor: '#000', color: '#fff', borderRadius: '25px', fontSize:{ xs: '8px'} }}>Get Started</Button>
+                    {/*<Button variant="contained" sx={{backgroundColor: '#000', color: '#fff', borderRadius: '25px', fontSize:{ xs: '8px'} }}>Get Started</Button>*/}
+                    <AppAuth theText="Get Started"/>
                 </Box>
             </Box>
         </Box>
