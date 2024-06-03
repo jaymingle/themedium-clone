@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Box, Stack, styled, Tab, Tabs} from "@mui/material";
+import {Box, Stack, styled, Tab, Tabs, Typography} from "@mui/material";
 import { tabsClasses } from '@mui/material/Tabs';
 
 
@@ -35,6 +35,7 @@ const Categories = () => {
 
     return (
         <Stack sx={{marginY: 2}}>
+            <Typography variant="h3" sx={{marginX:{xs:0, sm: 2, md: 5, lg: 1}, marginTop: 5, marginBottom: 5}}>Jay Mingle</Typography>
             <ScrollableBox sx={{maxWidth: { xs: 370, sm: 480, md: 720, lg: 920},}}>
                 <Tabs
                     value={value}

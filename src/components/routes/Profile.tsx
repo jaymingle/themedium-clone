@@ -7,7 +7,6 @@ const Profile = () => {
     return (
         <Box>
             <Navbar/>
-            <Typography>Jay Mingle</Typography>
             <Stack sx={{marginX:{xs:0, sm: 2, md: 5, lg: 20}, marginY:2}} spacing={4} direction="row">
                 <Posts/>
                 <Rightbar/>
