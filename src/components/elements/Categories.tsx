@@ -47,22 +47,6 @@ const Categories = () => {
                     <StyledTab onClick={tabClickHandler} label="Item One" />
                     <StyledTab label="Item Two" />
                     <StyledTab label="Item Three" />
-                    <StyledTab label="Item Four" />
-                    <StyledTab label="Item Five" />
-                    <StyledTab label="Item Six" />
-                    <StyledTab label="Item Seven" />
-                    <StyledTab label="Item Four" />
-                    <StyledTab label="Item Five" />
-                    <StyledTab label="Item Six" />
-                    <StyledTab label="Item Seven" />
-                    <StyledTab label="Item Four" />
-                    <StyledTab label="Item Five" />
-                    <StyledTab label="Item Six" />
-                    <StyledTab label="Item Seven" />
-                    <StyledTab label="Item Four" />
-                    <StyledTab label="Item Five" />
-                    <StyledTab label="Item Six" />
-                    <StyledTab label="Item Seven" />
                 </Tabs>
             </ScrollableBox>
             <hr/>
