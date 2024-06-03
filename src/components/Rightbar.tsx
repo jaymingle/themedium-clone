@@ -3,7 +3,7 @@ import StaffPick from "./elements/StaffPick.tsx";
 import Tags from "./elements/Tags.tsx";
 import More from "./elements/More.tsx";
 import SideHeading from "./elements/SideHeading.tsx";
-import {BookmarkAdd, SaveAsOutlined} from "@mui/icons-material";
+import {BookmarkAdd} from "@mui/icons-material";
 
 const Rightbar = () => {
     return (
