@@ -1,4 +1,5 @@
 import {Box, Button} from "@mui/material";
+import AppAuth from "./elements/AppAuth.tsx";
 
 const StoryNavbar = () => {
     return (
@@ -17,8 +18,10 @@ const StoryNavbar = () => {
                      src="https://miro.medium.com/v2/resize:fit:8976/1*Ra88BZ-CSTovFS2ZSURBgg.png" alt="Medium Logo"/>
                 <Box sx={{display: 'flex', gap: 2}}>
                     <Box sx={{display: 'flex', gap: 2}}>
-                        <Button variant="contained" sx={{color: '#fff', backgroundColor: '#000', textTransform: 'initial', border: '1px solid #fff', borderRadius: '25px', fontSize: '12px'}}>Sign In</Button>
-                        <Button variant="contained" sx={{color: '#000', backgroundColor: '#fff', textTransform: 'initial', borderRadius: '25px', fontSize: '12px'}}>Sign up</Button>
+                        {/*<Button variant="contained" sx={{color: '#fff', backgroundColor: '#000', textTransform: 'initial', border: '1px solid #fff', borderRadius: '25px', fontSize: '12px'}}>Sign In</Button>*/}
+                        {/*<Button variant="contained" sx={{color: '#000', backgroundColor: '#fff', textTransform: 'initial', borderRadius: '25px', fontSize: '12px'}}>Sign up</Button>*/}
+                        <AppAuth theText="Sign In"/>
+                        <AppAuth theText="Sign Up"/>
                     </Box>
                 </Box>
             </Box>

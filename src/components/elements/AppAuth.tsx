@@ -2,16 +2,11 @@ import React from 'react';
 import {
     Avatar,
     Box, Button, IconButton,
-    List,
-    ListItem,
-    ListItemButton,
-    ListItemIcon,
-    ListItemText,
     Modal, Stack, styled, TextField,
     Tooltip,
     Typography
 } from "@mui/material";
-import {Description, EditNote, Image, VideoCameraBack} from "@mui/icons-material";
+import {Description, Image, VideoCameraBack} from "@mui/icons-material";
 
 
 const style = {
@@ -49,7 +44,7 @@ const PostButton = styled(Button)(({theme}) => ({
     backgroundColor: theme.palette.secondary.main,
 }))
 
-const AppAuth = () => {
+const AppAuth = ({theText}) => {
 
     const [open, setOpen] = React.useState<boolean>(false)
     const handleOpen = () => setOpen(true);
@@ -57,17 +52,9 @@ const AppAuth = () => {
 
     return (
         <Box>
-            <Tooltip title="Write Write" onClick={handleOpen}>
-                <List sx={{width: '100%', maxWidth: '120px'}}>
-                    <ListItem disablePadding>
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <EditNote sx={{ width: '40px', height: '40px'}}/>
-                            </ListItemIcon>
-                            <ListItemText  primary="Write" sx={{marginLeft: '-16px'}} />
-                        </ListItemButton>
-                    </ListItem>
-                </List>
+            {/*The Text on display*/}
+            <Tooltip title="Write" onClick={handleOpen}>
+                <Button variant="contained" sx={{color: '#fff', backgroundColor: '#000', textTransform: 'initial', border: '1px solid #fff', borderRadius: '25px', fontSize: '12px'}}>{theText}</Button>
             </Tooltip>
 
             <Modal
