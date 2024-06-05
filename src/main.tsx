@@ -10,6 +10,7 @@ import Home from "./components/routes/Home.tsx";
 import AppLanding from "./components/routes/AppLanding.tsx";
 import Membership from "./components/routes/Membership.tsx";
 import OurStory from "./components/routes/OurStory.tsx";
+import Profile from "./components/routes/Profile.tsx";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
     {
         path: 'story',
         element: <OurStory/>
+    },
+    {
+        path: 'profile',
+        element: <Profile/>
     }
 ])
 
