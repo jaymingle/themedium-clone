@@ -1,5 +1,6 @@
 import {Box} from "@mui/material";
 import AppAuth from "./elements/AppAuth.tsx";
+import {Link} from "react-router-dom"
 
 const StoryNavbar = () => {
     return (
@@ -14,8 +15,11 @@ const StoryNavbar = () => {
                 paddingX: 3,
                 paddingY: 1
             }}>
-                <img width={100} height={30}
+                <Link to='/'>
+                    <img width={100} height={30}
                      src="https://miro.medium.com/v2/resize:fit:8976/1*Ra88BZ-CSTovFS2ZSURBgg.png" alt="Medium Logo"/>
+                </Link>
+
                 <Box sx={{display: 'flex', gap: 2}}>
                     <Box sx={{display: 'flex', gap: 2}}>
                         <AppAuth theText="Sign In"/>

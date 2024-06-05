@@ -68,7 +68,7 @@ const Navbar = () => {
         <AppBar position="sticky">
             <StyledToolBar>
                 <StyledBox sx={{gap: '20px'}}>
-                    <Link to="/"><img width={40}
+                    <Link to=""><img width={40}
                                src="https://cdn.icon-icons.com/icons2/2997/PNG/512/medium_logo_icon_187624.png"
                                alt="medium logo"/>
                     </Link>
