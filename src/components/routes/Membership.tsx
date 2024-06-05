@@ -11,7 +11,7 @@ const Membership = () => {
             <WhiteHorizontalLine/>
             <Box sx={{backgroundColor: '#242424'}}>
                 <Box sx={{paddingX: 5, color: '#fff', paddingY: 10, width: '35%'}}>
-                    <Typography variant="h2" sx={{fontWeight: 500, fontSize: '72px', paddingY: 5}}>Everyone has a <br/> story to tell.</Typography>
+                    <Typography variant="h2" sx={{fontWeight: 500, fontSize: '72px', paddingY: 5}}>Membership has a  <br/> story to tell.</Typography>
                     <Typography variant="body1" sx={{paddingY: 3, fontSize: '20px', fontWeight: 100}}>
                         Medium is a home for human stories and ideas.
                         Here, anyone can share
