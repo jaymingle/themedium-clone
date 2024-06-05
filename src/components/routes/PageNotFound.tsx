@@ -1,4 +1,5 @@
-import {Box, Link, Stack, Typography} from "@mui/material";
+import {Box, Stack, Typography} from "@mui/material";
+import {Link} from "react-router-dom"
 import LogedOutNavbar from "../LogedOutNavbar.tsx";
 
 const PageNotFound = () => {
@@ -15,8 +16,8 @@ const PageNotFound = () => {
                         <Typography variant="subtitle1">PAGE NOT FOUND</Typography>
                         <Typography variant="h2" sx={{color: 'grey', fontWeight: 600, fontSize: '180px'}}>404</Typography>
                         <Typography variant="h5" sx={{fontWeight: 400, fontSize: '42px'}}>Out of <br/> nothing, <br/> something.</Typography>
-                        <Typography sx={{marginBottom: 2}}>You can find (just about) anything on Medium — <br/> apparently even a page that doesn’t exist. Maybe these stories about finding what you didn’t know you were looking for will take you somewhere new?</Typography>
-                        <Link sx={{color: '#000', textDecoration: 'underline', paddingTop: 2}}>Home</Link>
+                        <Typography sx={{marginBottom: 5}}>You can find (just about) anything on Medium — <br/> apparently even a page that doesn’t exist. Maybe these stories about finding what you didn’t know you were looking for will take you somewhere new?</Typography>
+                        <Link style={{color: '#000', textDecoration: 'underline'}} to="/">Home</Link>
                     </Box>
                 </Stack>
             </Box>

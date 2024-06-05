@@ -9,6 +9,7 @@ import {
     Badge, Avatar,  Menu, MenuItem, Button
 } from "@mui/material";
 import {Notifications, Search as TheSearch} from '@mui/icons-material';
+import {Link} from 'react-router-dom';
 import Write from "./elements/Write.tsx";
 
 
@@ -67,11 +68,13 @@ const Navbar = () => {
         <AppBar position="sticky">
             <StyledToolBar>
                 <StyledBox sx={{gap: '20px'}}>
-                    <img width={40} src="https://cdn.icon-icons.com/icons2/2997/PNG/512/medium_logo_icon_187624.png"
-                         alt="medium logo"/>
+                    <Link to="/"><img width={40}
+                               src="https://cdn.icon-icons.com/icons2/2997/PNG/512/medium_logo_icon_187624.png"
+                               alt="medium logo"/>
+                    </Link>
                     <Search sx={{display: {xs: 'none', sm: 'block'}}}>
                         <SearchIconWrapper>
-                            <TheSearch/>
+                        <TheSearch/>
                         </SearchIconWrapper>
                         <StyledInputBase placeholder="search..." inputProps={{'aria-label': 'search'}}/>
                     </Search>
@@ -112,7 +115,7 @@ const Navbar = () => {
                         }}
                         sx={{marginTop: '50px'}}
                     >
-                        <MenuItem>Profile</MenuItem>
+                        <MenuItem> <Link to="/profile">Profile</Link> </MenuItem>
                         <MenuItem>My account</MenuItem>
                         <MenuItem>Logout</MenuItem>
                     </Menu>
