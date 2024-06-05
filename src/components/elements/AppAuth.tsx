@@ -30,6 +30,7 @@ const StyledBox = styled(Box)({
     display: 'flex',
     justifyContent: 'space-between',
     paddingBottom: 5,
+    gap: 2
 })
 
 const StyledInput = styled(Input)(({

@@ -20,6 +20,7 @@ const style = {
     boxShadow: 24,
     p: 4,
     paddingTop: 10,
+    paddingBottom: 10,
     display: 'flex',
     flexDirection: 'column',
     gap: 5,
