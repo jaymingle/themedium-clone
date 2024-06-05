@@ -9,10 +9,7 @@ function App() {
 
   return (
     <Box>
-        {/*<Home/>*/}
-        {/*<Profile/>*/}
         <PageNotFound/>
-        {/*<AppLanding/>*/}
     </Box>
   )
 }
