@@ -55,7 +55,7 @@ const AppAuthWithText:React.FC<Props> = ({theText}) => {
     const[signIn, setSignIn] = React.useState<boolean>(true)
 
     const SignInElement = <StyledBox>
-        <form>
+        <form style={{paddingBottom: '20px', marginBottom: '50px'}}>
             <Typography variant='subtitle1'>Sign In</Typography>
             <StyledInput placeholder="Email" type="email"/>
             <StyledInput placeholder="Password" type="password"/>
@@ -64,7 +64,7 @@ const AppAuthWithText:React.FC<Props> = ({theText}) => {
     </StyledBox>
 
     const SignUpElement = <StyledBox>
-        <form>
+    <form style={{paddingBottom: '20px', marginBottom: '50px'}}>
             <Typography variant='subtitle1'>Sign Up</Typography>
             <StyledInput placeholder="Email" type="email"/>
             <StyledInput placeholder="Password" type="password"/>

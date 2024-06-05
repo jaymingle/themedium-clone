@@ -11,14 +11,15 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: {xs: '70%', sm: '50%', md: '25%'},
-    height: {xs: '50%', sm: '50%', md: '25%'},
+    width: {xs: '70%', sm: '50%', md: '30%'},
+    height: {xs: '50%', sm: '50%', md: '30%'},
     borderRadius: 5,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
     paddingTop: 10,
+    paddingBottom: 10,
     display: 'flex',
     flexDirection: 'column',
     gap: 5,
@@ -28,6 +29,7 @@ const style = {
 const StyledBox = styled(Box)({
     display: 'flex',
     justifyContent: 'space-between',
+    paddingBottom: 5,
 })
 
 const StyledInput = styled(Input)(({
@@ -54,7 +56,7 @@ const AppAuth: React.FC<Props> = ({theText}) => {
     const[signIn, setSignIn] = React.useState<boolean>(true)
 
     const SignInElement = <StyledBox>
-        <form>
+        <form style={{paddingBottom: '20px', marginBottom: '50px'}}>
             <Typography variant='subtitle1'>Sign In</Typography>
             <StyledInput placeholder="Email" type="email"/>
             <StyledInput placeholder="Password" type="password"/>
@@ -63,13 +65,13 @@ const AppAuth: React.FC<Props> = ({theText}) => {
     </StyledBox>
 
     const SignUpElement = <StyledBox>
-        <form>
-            <Typography variant='subtitle1'>Sign Up</Typography>
-            <StyledInput placeholder="Email" type="email"/>
-            <StyledInput placeholder="Password" type="password"/>
-            <StyledInput sx={{width: '50%', backgroundColor: 'green', color: '#fff'}} type="submit" value="Sign Up"/>
-        </form>
-    </StyledBox>
+        <form style={{paddingBottom: '20px', marginBottom: '50px'}}>
+        <Typography variant='subtitle1'>Sign Up</Typography>
+        <StyledInput placeholder="Email" type="email"/>
+        <StyledInput placeholder="Password" type="password"/>
+        <StyledInput sx={{width: '50%', backgroundColor: 'green', color: '#fff'}} type="submit" value="Sign Up"/>
+    </form>
+</StyledBox>
 
     return (
         <Box>
