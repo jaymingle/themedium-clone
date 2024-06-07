@@ -1,10 +1,12 @@
-interface Posts{
+interface Post{
     name: string,
     post: string,
     title: string,
     category: string,
-    date: Date,
+    date: string,
     image: string
 }
 
-export default Posts;
+type Posts = Post[]
+
+export type {Post, Posts};

@@ -11,6 +11,7 @@ import AppLanding from "./components/routes/AppLanding.tsx";
 import Membership from "./components/routes/Membership.tsx";
 import OurStory from "./components/routes/OurStory.tsx";
 import Profile from "./components/routes/Profile.tsx";
+import PostsContextProvider from "./context/PostsContextProvider.tsx";
 
 const router = createBrowserRouter([
     {
@@ -39,7 +40,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
       <ThemeProvider theme={theme}>
-          <RouterProvider router={router}/>
+          <PostsContextProvider>
+              <RouterProvider router={router}/>
+          </PostsContextProvider>
       </ThemeProvider>
   </React.StrictMode>,
 )

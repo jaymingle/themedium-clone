@@ -1,6 +1,15 @@
 import {createContext} from "react";
-import Posts from "../types/Posts"
+import {Post } from "../types/Posts"
 
-const PostsContext = createContext<Posts>()
+interface PostsContextType{
+    posts: Post[];
+    setPosts:  (posts: Post[]) => void;
+}
+
+
+const PostsContext = createContext<PostsContextType>({
+    posts: [],
+    setPosts: () => {}
+})
 
 export default PostsContext;

@@ -1,8 +1,12 @@
-import React, {useState} from 'react';
+import {ReactNode, useState} from 'react';
 import PostsContext from "./postscontext.ts";
-import Posts from "../types/Posts"
+import {Posts} from "../types/Posts"
 
-const PostsContextProvider = ({children}) => {
+interface PostsContextProviderProps {
+    children: ReactNode;
+}
+
+const PostsContextProvider = ({children}: PostsContextProviderProps) => {
 
     const [posts, setPosts] = useState<Posts>([])
 
